@@ -13,6 +13,34 @@ restore from gcs to bq:
 ./bqcp bq2gcs --project target_project --bucket target_project_bq_backups
 ```
 
+## flags and commands
+type `bqcp help` for a complete list of commands and flags
+
+```bash
+2019-07-21 09:27:11.21 [Info] bqcp application started
+copy a bq project from/to gcs
+
+Usage:
+  bqcp [command]
+
+Available Commands:
+  bq2gcs      backup bq to gcs
+  gcs2bq      restore a gcs backup to bq
+  help        Help about any command
+
+Flags:
+      --bucket string         Your GCS bucket for the backup
+      --config string         config file (default is $HOME/.bqcp.yaml)
+  -h, --help                  help for bqcp
+      --max_concurrency int   the maximum number of concurrent functions making BigQuery API calls (defaults to 50) (default 50)
+      --max_errors int        the maximum errors to allow when exporting tables (defaults to 100) (default 100)
+      --path string           optional path for the backup on GCS. By default the backup will be written to the match the project name on the root of the bucket (default "07-21-2019")
+      --project string        Your Source GCP Project ID
+  -t, --toggle                Help message for toggle
+
+Use "bqcp [command] --help" for more information about a command.
+```
+
 ## log file
 `bqcp` logs info and error logs to bqcp.log and to the console, so you can easily track the progress of the backup and restore operations. 
 
