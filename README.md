@@ -5,12 +5,12 @@
 ## usage
 export bq to gcs:
 ```bash
-./bqcp bq2gcs --project source_project --bucket source_project_bq_backups
+bqcp bq2gcs --project source_project --bucket source_project_bq_backups
 ```
 
 restore from gcs to bq:
 ```bash
-./bqcp bq2gcs --project target_project --bucket target_project_bq_backups
+bqcp bq2gcs --project target_project --bucket target_project_bq_backups
 ```
 
 ## flags and commands
