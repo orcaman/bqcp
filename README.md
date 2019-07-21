@@ -32,9 +32,9 @@ Flags:
       --bucket string         Your GCS bucket for the backup
       --config string         config file (default is $HOME/.bqcp.yaml)
   -h, --help                  help for bqcp
-      --max_concurrency int   the maximum number of concurrent functions making BigQuery API calls (defaults to 50) (default 50)
-      --max_errors int        the maximum errors to allow when exporting tables (defaults to 100) (default 100)
-      --path string           optional path for the backup on GCS. By default the backup will be written to the match the project name on the root of the bucket (default "07-21-2019")
+      --max_concurrency int   the maximum number of concurrent functions making BigQuery API calls (defaults to 50)
+      --max_errors int        the maximum errors to allow when exporting tables (default 100)
+      --path string           optional path for the backup on GCS. By default the backup will be written to the match the project name on the root of the bucket (default "dd-MM-YYYY")
       --project string        Your Source GCP Project ID
   -t, --toggle                Help message for toggle
 
