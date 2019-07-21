@@ -1,5 +1,7 @@
 # bqcp
 
+<img style="-webkit-user-select: none;cursor: zoom-in;" src="https://storage.googleapis.com/skyline-157520/austin.jpeg" width="378" height="234">
+
 `bqcp` is a command line tool for backing up and restoring entire bigquery projects. It supports a basic command to export a project into Google Cloud Storage and vice versa. 
 
 ## usage
